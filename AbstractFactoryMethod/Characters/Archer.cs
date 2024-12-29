@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Reflection.Metadata;
 
 public class Archer : Character
 {
     public override void Attack()
     {
-        Console.WriteLine("Archer attacking");
+        name = "Archer";
+        Console.WriteLine(name + " attacking");
     }
 }

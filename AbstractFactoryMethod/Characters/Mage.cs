@@ -4,6 +4,7 @@ public class Mage : Character
 {
     public override void Attack()
     {
-        Console.WriteLine("Mage attacking");
+        name = "Mage";
+        Console.WriteLine(name + " attacking");
     }   
 }

@@ -4,24 +4,28 @@ public class ComputerBuilder : IComputerBuilder
 {
     private Computer computer = new Computer();
 
-    public void SetCPU(string cpu)
+    public IComputerBuilder SetCPU(string cpu)
     {
         computer.CPU = cpu;
+        return this;
     }
 
-    public void SetGPU(string gpu)
+    public IComputerBuilder SetGPU(string gpu)
     {
         computer.GPU = gpu;
+        return this;
     }
 
-    public void SetRAM(string ram)
+    public IComputerBuilder SetRAM(string ram)
     {
         computer.RAM = ram;
+        return this;
     }
 
-    public void SetStorage(string storage)
+    public IComputerBuilder SetStorage(string storage)
     {
         computer.Storage = storage;
+        return this;
     }
 
     public Computer GetComputer()

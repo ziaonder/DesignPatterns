@@ -10,40 +10,46 @@ public class ServerBuilder : IComputerBuilder
             server.Computer = new Computer();
     }
 
-    public void SetCPU(string cpu)
+    public IComputerBuilder SetCPU(string cpu)
     {
         InstantiateComputer();
         server.Computer.CPU = cpu;
+        return this;
     }
 
-    public void SetRAM(string ram)
+    public IComputerBuilder SetRAM(string ram)
     {
         InstantiateComputer();
         server.Computer.RAM = ram;
+        return this;
     }
 
-    public void SetStorage(string storage)
+    public IComputerBuilder SetStorage(string storage)
     {
         InstantiateComputer();
         server.Computer.Storage = storage;
+        return this;
     }
 
-    public void SetNetworkCard(string networkCard)
+    public IComputerBuilder SetNetworkCard(string networkCard)
     {
         InstantiateComputer();
         server.NetworkCard = networkCard;
+        return this;
     }
 
-    public void SetRAIDConfiguration(string raidConfig)
+    public IComputerBuilder SetRAIDConfiguration(string raidConfig)
     {
         InstantiateComputer();
         server.RAIDConfiguration = raidConfig;
+        return this;
     }
 
-    public void SetPowerSupply(string powerSupply)
+    public IComputerBuilder SetPowerSupply(string powerSupply)
     {
         InstantiateComputer();
         server.PowerSupply = powerSupply;
+        return this;
     }
 
     public Server GetServer()
@@ -51,7 +57,7 @@ public class ServerBuilder : IComputerBuilder
         return server;
     }
 
-    public void SetGPU(string gpu)
+    public IComputerBuilder SetGPU(string gpu)
     {
         throw new NotImplementedException();
     }

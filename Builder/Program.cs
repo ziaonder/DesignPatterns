@@ -6,10 +6,10 @@
         Computer computer = builder.GetComputer();
         computer.Display();
 
-        builder.SetCPU("Intel i3 12th gen");
-        builder.SetGPU("someBrand Nvidia 1050 2GB");
-        builder.SetRAM("16 GB someBrand");
-        builder.SetStorage("1 TB SSD someBrand");
+        builder.SetCPU("Intel i3 12th gen")
+        .SetGPU("someBrand Nvidia 1050 2GB")
+        .SetRAM("16 GB someBrand")
+        .SetStorage("1 TB SSD someBrand");
         computer = builder.GetComputer();
         computer.Display();
 

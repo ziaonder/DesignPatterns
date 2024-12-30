@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralizedFactoryMethod", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecentralizedFactoryMethod", "FactoryMethod\DecentralizedFactoryMethod\DecentralizedFactoryMethod.csproj", "{6DF057FC-9EEA-4A2A-9899-05D555DFD516}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{AF1E725B-52BF-49D6-A751-903A1D6E98F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6DF057FC-9EEA-4A2A-9899-05D555DFD516}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF057FC-9EEA-4A2A-9899-05D555DFD516}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF057FC-9EEA-4A2A-9899-05D555DFD516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1E725B-52BF-49D6-A751-903A1D6E98F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1E725B-52BF-49D6-A751-903A1D6E98F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1E725B-52BF-49D6-A751-903A1D6E98F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1E725B-52BF-49D6-A751-903A1D6E98F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

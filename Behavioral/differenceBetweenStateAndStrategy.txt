@@ -1,0 +1,3 @@
+Their structure looks completely same where you part the mechanisms, select the intended mechanism, run it. The only difference is who handles the state transition. 
+State Pattern -> Concrete states handle the state transition and have more control over them. Restriction is possible.
+Strategy Pattern -> Context handles the state transition. "Player" in my case. 

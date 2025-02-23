@@ -7,6 +7,17 @@ public class StateRun : ICharacterState
         Console.WriteLine("Entered StateRun");
     }
 
+    public void SetState(Character character, ICharacterState state)
+    {
+        if(state is StateAttack)
+        {
+            Console.WriteLine("Can't change state. Attacking while running is not valid.");
+            return;
+        }
+
+        character.SetState(state);
+    }
+
     public void Execute()
     {
         Console.WriteLine("Executing StateRun");

@@ -3,6 +3,7 @@
 public interface ICharacterState
 {
     public void Enter();
+    public void SetState(Character character, ICharacterState state);
     public void Execute();
     public void Exit();
 }

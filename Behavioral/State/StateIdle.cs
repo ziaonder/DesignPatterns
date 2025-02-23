@@ -7,6 +7,11 @@ public class StateIdle : ICharacterState
         Console.WriteLine("Entered StateIdle");
     }
 
+    public void SetState(Character character, ICharacterState state)
+    {
+        character.SetState(state);
+    }
+
     public void Execute()
     {
         Console.WriteLine("Executing StateIdle");

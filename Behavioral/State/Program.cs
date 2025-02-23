@@ -6,9 +6,9 @@
         {
             Character character = new Character();
             character.Update();
-            character.SelectState("Run");
+            character.AttemptToChangeState("Run");
             character.Update();
-            character.SelectState("Attack");
+            character.AttemptToChangeState("Attack");
             character.Update();
         }
     }

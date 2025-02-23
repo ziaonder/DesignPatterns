@@ -10,37 +10,38 @@ public class Character
     public Character()
     {
         state = idle;
+        state.Enter();
     }
 
-    public void SelectState(string stateName)
+    public void AttemptToChangeState(string stateName)
     {
-        ICharacterState newState = null;
-
         switch (stateName)
         {
             case "Idle":
                 if (state == idle)
                     return;
                 else
-                    newState = idle;
+                    state.SetState(this, idle);
                 break;
             case "Run":
                 if (state == run)
                     return;
                 else
-                    newState = run;
+                    state.SetState(this, run);
                 break;
             case "Attack":
                 if (state == attack)
                     return;
                 else
-                    newState = attack;
+                    state.SetState(this, attack);
                 break;
             default:
                 return;
         }
+    }
 
-        // The code will reach here only if the state is changed
+    public void SetState(ICharacterState newState)
+    {
         state.Exit();
         state = newState;
         state.Enter();
